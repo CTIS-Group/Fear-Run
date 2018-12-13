@@ -19,20 +19,19 @@ public class CreateEnemies : MonoBehaviour {
     private void CreateRandomEnemies()
     {
         randomNum = Random.Range(0, gameObjects.Length);
-        print(randomNum);
         switch (randomNum)
         {
             case 0:
-                Instantiate(gameObjects[randomNum], new Vector3(Random.Range(-2f, 2f), 7f, 0f), Quaternion.Euler(0f, 0f, -90f));
+                Instantiate(gameObjects[randomNum], new Vector3(-3f, 7f, 0f), Quaternion.identity);
                 break;
             case 1:
-                Instantiate(gameObjects[randomNum], new Vector3(Random.Range(-2f, 2f), 7f, 0f), Quaternion.Euler(0f, 0f, -90f));
+                Instantiate(gameObjects[randomNum], new Vector3(0f,7f,0f), Quaternion.identity);
                 break;
             case 2:
-                Instantiate(gameObjects[randomNum], new Vector3(4f, Random.Range(0f, 2f), 0f), Quaternion.Euler(180f, 0f, 180f));
+                Instantiate(gameObjects[randomNum], new Vector3(3f, 8f, 0f), Quaternion.identity);
                 break;
             case 3:
-                Instantiate(gameObjects[randomNum], new Vector3(-4f, Random.Range(0f, 2f), 0f), Quaternion.identity);
+                Instantiate(gameObjects[randomNum], new Vector3(0f, 7f, 0f), Quaternion.identity);
                 break;
         }
     }

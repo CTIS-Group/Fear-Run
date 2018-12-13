@@ -35,11 +35,6 @@ public class DroppingObstacle : MonoBehaviour
         }
     }
 
-    void FadeInitiator()
-    {
-        StartCoroutine(Fade());
-    }
-
     IEnumerator Fade()
     {
         int limit = (int)totalRotation / (int)fallSpeed;

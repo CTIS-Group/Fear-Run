@@ -7,8 +7,10 @@ public class Enemy : MonoBehaviour {
     [Tooltip("1 for right, -1 for left, 0 for none")][SerializeField] int isX = 0;
     [Tooltip("1 for top, -1 for bottom, 0 for none")][SerializeField] int isY = -1;
     [SerializeField] float speedX = 10f, speedY = 10f;
-    private new Vector3 movementFactor;
+    Vector3 movementFactor;
     background bckground;
+    
+
     // Use this for initialization
     void Start ()
     {
