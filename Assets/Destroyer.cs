@@ -8,7 +8,4 @@ public class Destroyer : MonoBehaviour {
     {
         Destroy(col.gameObject.transform.parent.gameObject);
     }
-    void OnTriggerEnter2d(Collision2D col)
-    {
-    }
 }

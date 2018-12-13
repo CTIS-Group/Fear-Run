@@ -14,7 +14,7 @@ public class MovingObstacles : MonoBehaviour {
         int index = 0;
         foreach (Transform child in transform)
         {
-            child.localPosition = new Vector3(4 + index * gapBetweenObstacles + index * 2f, 0);
+            child.localPosition = new Vector3(-5 + index * gapBetweenObstacles + index * 2f, 0);
             index++;
         }
         startPoint = new Vector3(-5 + +index * gapBetweenObstacles + index * 2f, 0);

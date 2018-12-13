@@ -33,6 +33,10 @@ public class CreateEnemies : MonoBehaviour {
             case 3:
                 Instantiate(gameObjects[randomNum], new Vector3(0f, 7f, 0f), Quaternion.identity);
                 break;
+            case 4:
+                Instantiate(gameObjects[randomNum], new Vector3(0f, 7f, 0f), Quaternion.identity);
+                break;
+
         }
     }
 }
