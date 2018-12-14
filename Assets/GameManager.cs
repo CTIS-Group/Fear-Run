@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+using EZCameraShake;
 
 public static class GameManager 
 {
@@ -15,6 +17,7 @@ public static class GameManager
 
     public static void CheckGameState(PlayerControl _P)
     {
+        CameraShaker.Instance.ShakeOnce(5f, 5f, 0.2f, 0.2f);
         if (_P.playerLives <= 0)
         {
             gameState = GameStates.OVER;
@@ -31,6 +34,7 @@ public static class GameManager
             else
             {
                 Destroyer.Destroy(_P.gameObject);
+                SceneManager.LoadScene("GameOverScene");
             }
         }//OVER ELSE
     }

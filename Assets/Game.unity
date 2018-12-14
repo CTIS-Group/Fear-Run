@@ -254,9 +254,34 @@ PrefabInstance:
       propertyPath: m_Size.y
       value: 0.7493513
       objectReference: {fileID: 0}
+    - target: {fileID: 114553419855139318, guid: d40abdb9a2d067b4aa086feeb4a75909,
+        type: 3}
+      propertyPath: protectionTime
+      value: 1.5
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 70681193995381378, guid: d40abdb9a2d067b4aa086feeb4a75909, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: d40abdb9a2d067b4aa086feeb4a75909, type: 3}
+--- !u!1 &665429602 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1506372607768696, guid: 2d5d4c86926f8854583fd2031634f341,
+    type: 3}
+  m_PrefabInstance: {fileID: 1299473194}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &665429603
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 665429602}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ab8353b5ebd32545867da143199a814, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DefaultPosInfluence: {x: 0.15, y: 0.15, z: 0.15}
+  DefaultRotInfluence: {x: 1, y: 1, z: 1}
 --- !u!1001 &941620215
 PrefabInstance:
   m_ObjectHideFlags: 0
